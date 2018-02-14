@@ -1,0 +1,86 @@
+Program bintang;
+uses crt;
+
+var
+a,b,c,d,e,f,g,h,m,n,i,j,x,y,z,o,urkn,rkr,rt,sp,pilih: integer;
+
+begin
+repeat
+writeln ('pilih menu');writeln;
+writeln ('1.segitiga bintang rata kiri');
+writeln ('2.segitiga bintang rata tengah');
+writeln ('3.segitiga bintang rata kanan');
+writeln ('4.segitiga pascal');
+writeln ('0.keluar');
+write ('pilihan'); readln (pilih);
+
+case pilih of
+
+1:
+begin
+writeln('Masukkan Angka Untuk Gambar Segitiga rata kiri : ');readln(n);
+
+for i:=n downto 1 do
+begin
+for j:=i-1 downto 1 do
+write(' ');
+writeln;
+
+for m:=n-(i-1) downto 1 do
+write('*');
+end;
+end;
+
+2:
+begin
+
+writeln('Masukkan Angka Untuk Gambar Segitiga rata tengah : ');readln(b);
+
+for c:=b downto 1 do
+begin
+for c:=d+1 downto 1 do
+write(' ');
+
+for a:=b-(c-1) downto 1 do
+write('*');
+writeln;
+end;
+end;
+
+3:
+begin
+
+writeln('Masukkan Angka Untuk Gambar Segitiga rata kanan : ');readln(f);
+
+for g:=f downto 1 do
+begin
+for h:=g-1 downto 1 do
+write(' ');
+
+for e:=f-(g-1) downto 1 do
+write('*');
+writeln;
+end;
+end;
+
+4:
+Begin
+
+writeln ('masukan angka : '); readln(a);
+for b:= 1 to a do
+begin
+for c:= a downto b do
+write(' ');
+for d:=1 to b+b-1 do
+write('*');
+writeln;
+end;
+end;
+end;
+
+until (pilih=0);
+
+
+readkey;
+
+end.
