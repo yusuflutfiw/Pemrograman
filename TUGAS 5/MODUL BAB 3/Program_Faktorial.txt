@@ -1,0 +1,25 @@
+program faktorial;
+uses crt;
+var
+i,n,f : integer;
+
+begin
+	writeln('Nama     : Yusuf Lutfi W   ');
+	writeln('Fakultas : Teknologi Informasi   ');
+	writeln('Prodi    : Informatika           ');
+writeln;
+writeln;
+	writeln('_______ PROGRAM FAKTORIAL _______');
+writeln;
+	write('Masukan Nilai n : '); readln(n);
+		f := 1;
+		for i := 1 to n do
+	begin
+		f := f*i
+	end;
+writeln;
+	writeln(n,' faktorial = ', f);
+writeln;
+	writeln('=================================');
+readkey;
+end.

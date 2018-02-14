@@ -1,0 +1,29 @@
+uses crt;
+var
+x : integer;
+sinus,cosinus : real;
+begin
+clrscr;
+writeln('Nama      :  Yusuf Lutfi W ');
+writeln('Fakultas  :  Teknologi Informasi');
+writeln('Prodi     :  Informatika (IF)');
+writeln;
+writeln;
+writeln;
+
+writeln('*** TABEL SINUS DAN COSINUS DALAM SATUAN DERAJAD ***');
+writeln('===========================');
+writeln('   X      Sinus     Cosinus ');
+writeln('---------------------------');
+
+x:=0;
+while x<=360 do
+begin
+sinus:=Sin(x/57.2958);
+cosinus:=cos(x/57.2958);
+writeln(x:5 ,sinus:10:2 ,cosinus:10:2);
+x:=x+30;
+end;
+writeln('===========================');
+readln;
+end.
