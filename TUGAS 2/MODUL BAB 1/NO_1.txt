@@ -1,0 +1,24 @@
+uses wincrt;
+var
+i,b,c,d: real;
+begin
+i:=3.0;
+b:=2.0;
+c:=0.0;
+
+i:=i+i;
+b:=b+i;
+c:=c*i;
+write('nilai i=',i,' b=',b,' c=',c);
+end. 
+
+hasil tampilan akhir
+
+i=6.00000000000000E+000
+hasil tampilan akhir '6.00000000000000E+000' didapatkan dari input i:=3.0; => i:=i+i; => i:=3 + 3= 6.00000000000000E+000
+
+b=8.00000000000000E+000
+hasil tampilan akhir '8.00000000000000E+000' didapatkan dari input b:=2.0; => b:=b+i; => b:=6 + 2= 8.00000000000000E+000
+
+c=0.00000000000000E+000
+hasil tampilan akhir '0.00000000000000E+000' didapatkan dari input c:=0.0; => c:=c x i; => c:=0 x 6= 0.00000000000000E+000 

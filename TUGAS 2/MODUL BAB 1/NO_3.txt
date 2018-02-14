@@ -1,0 +1,16 @@
+program luaslayanglayang;
+
+uses crt;
+var
+	d1,d2,hasil:integer;
+
+begin
+
+	writeln('Luas Layang-layang');
+	write('masukan diagonal vertikal=');readln(d1);
+	write('masukan diagonal horizontal=');readln(d2);
+		hasil:=(d1*d2)div 2;
+
+	writeln(d1,'*',d2,'div',2,'=',hasil);
+	readkey;
+end.
