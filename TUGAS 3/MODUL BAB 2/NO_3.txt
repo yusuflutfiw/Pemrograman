@@ -1,0 +1,26 @@
+program Huruf_Mutu;
+uses crt;
+var 
+nilai: integer;
+begin
+writeln('***Masukan Nilai Mutu***');
+write ('Masukan Nilai :');readln (nilai);
+case (nilai) of
+0..49 : write ('Nilai E');
+50..59 : write ('Nilai D');
+60..79 : write ('Nilai C');
+80..89 : write ('Nilai B');
+90..100 : write ('Nilai A');
+else
+writeln ('Input Data Salah');
+end;
+readkey;
+end.
+
+
+***Hasil Tampilan Akhir***
+Masukan Nilai dari 0..100
+
+***Huruf Nilai Mutu***
+Masukan Nilai :60
+Nilai C

@@ -1,0 +1,29 @@
+program mencari_bilangan_terbesar;
+
+uses crt;
+var
+a,c,i,l:integer;
+
+begin
+	writeln('Mencari Nilai Terbesar');
+	writeln('**********************');
+	write('Masukan angka pertama :');readln(a);
+	write('Masukan angka kedua :');readln(c);
+	write('Masukan angka ketiga :');readln(i);
+	write('Masukan angka keempat :');readln(l);
+
+writeln;
+
+	if (a>c) and (a>i) and (a>l) then
+	writeln(a,' adalah nilai terbesar')
+	else
+	if (c>a) and (c>i) and (c>l) then
+	writeln(c,' adalah nilai terbesar')
+	else
+	if (i>a) and (i>c) and (i>l) then
+	writeln(i,' adalah nilai terbesar')
+	else
+	if (l>a) and (l>c) and (l>c) then
+	writeln(l,' adalah nilai terbesar');
+readkey;
+end.
